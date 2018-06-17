@@ -1127,19 +1127,32 @@ audio{
 .nav li{
 	position:absolute;
 }
+a{
+	text-shadow:#FFFF00 0 0 0.05em;
+    color:#fff;
+    font-size:0.75em; 
+}
 .fadeIn1{
 	list-style:none;
-	-webkit-animation:fadeIn 0s .2s ease both;
+	-webkit-animation:fadeIn 5s .5s ease both;
 }
-.fadeIn2{
+.fadeIn4{
 	list-style:none;
-	-webkit-animation:fadeIn 0s .2s ease both;
+	-webkit-animation:fadeIn 15s .5s ease both;
+}
+.fadeIn5{
+	list-style:none;
+	-webkit-animation:fadeIn 25s .5s ease both;
+}
+.fadeIn6{
+	list-style:none;
+	-webkit-animation:fadeIn 35s .5s ease both;
 }
 .tip1{
 	font-size:0.75em;
 	position:absolute;
-	margin-top:-100em;
-	margin-left:18em;
+	margin-top:-98em;
+	margin-left:15em;
 }	
 @keyframes fadeIn{
 	0%{opacity:0;}
