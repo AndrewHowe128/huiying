@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="device-width=width,initial-scale=1">
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	<title>Pikachu</title>
+</head>
+<body>
+<audio src="dreams.mp3" controls="controls">
+Your browser does not support the audio element.
+</audio>
+	<div class="pikachu_container">
+		<div class="header">
+			<div class="header_main">
+				<span class="battery"></span>
+				<span class="clock" id="nowTime">09:00</span>
+			</div>
+		</div>
+		<div class="time">
+			<h1>09:00</h1>
+			<p id="date">2018年&nbsp;6月18日</p>
+			<p>惠影生日快乐</p>
+		</div>
+		<div class="body">
+			<div class="eyes">
+				<div class="leftEye"></div>
+				<div class="rightEye"></div>
+			</div>
+			<div class="nose"></div>
+			<div class="cheek">
+				<div class="leftCheek"></div>
+				<div class="rightCheek"></div>
+			</div>
+			<div class="mouth">
+				<div class="mouth_main">
+					<div class="tongue"></div>
+				</div>
+			</div>
+			<div class="hands">
+				<div class="leftHand">
+					<div class="leftHand_main">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<div class="leftshadow"></div>
+					</div>
+				</div>
+				<div class="rightHand">
+					<div class="rightHand_main">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<div class="rightshadow"></div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box_main">
+					<div class="box_circle"></div>
+				</div>
+			</div>
+		</div>
+		<div class="tip1">
+		    <ul>
+			    <li class="nav fadeIn1"><a>2017年11月22日，德豪与惠影之间有了一个连接,</a></li>
+				<li class="nav fadeIn2"><a>大概他们谁都没想到这条连接会保持到现在。</a></li>
+				<li class="nav fadeIn2"><a>二百零八天悄然流逝，德豪喜欢天天text惠影，油嘴滑舌，不知所云。</a></li>
+				<li class="nav fadeIn2"><a>小姐姐就是他自己的诗篇，希望可以一边品读，一边走向远方。</a></li>
+				<li class="nav fadeIn2"><a>从这惠影的长诗中，德豪读出了她的活力、聪颖、善良还有一颗梦幻般的心。</a></li>
+				<li class="nav fadeIn2"><a>Someday，德豪会带上一个皮卡丘与她会面。</a></li>
+			</ul>
+		</div>
+		<p class="author">@HuiYing</p>
+	</div>
+<script type="text/javascript">
+	window.onload = function(){
+		var timer = setInterval(function(){
+			var date = new Date();
+			var y = date.getFullYear();
+			var mon = parseInt(date.getMonth()) + 1;
+			var d = date.getDate();
+			var h = date.getHours();
+			var m = date.getMinutes();
+			if(h<10){
+				h = '0'+h;
+			}
+			if(m<10){
+				m = '0'+m;
+			}
+			document.getElementById('date').innerHTML = y+'年&nbsp;'+mon+'月'+d+'日';
+			document.getElementById('nowTime').innerHTML = h+':'+m;
+			document.getElementsByTagName('h1')[0].innerHTML = h+':'+m;
+		},1000);
+	};
+</script>
+</body>
+</html>
